@@ -2,7 +2,7 @@ name: Generate Profile Stats
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # daily at 03:00 UTC
+    - cron: "0 3 * * *" # daily 03:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -15,21 +15,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate GitHub Readme Stats cards
+      # Generate "GitHub Stats" card
+      - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v1
         with:
-          username: saadnasir95
-          # This uses the built-in token automatically for API access
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Where to save the generated SVGs in your repo
-          output_path: assets
-          # Generate these cards
-          cards: |
-            stats
-            top-langs
-          # Card options
-          stats_options: show_icons=true&include_all_commits=true
-          top_langs_options: layout=compact&langs_count=8
+          token: ${{ secrets.GITHUB_TOKEN }}
+          card: stats
+          path: assets/stats.svg
+          options: username=saadnasir95&show_icons=true&include_all_commits=true
+
+      # Generate "Top Languages" card
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          card: top-langs
+          path: assets/top-langs.svg
+          options: username=saadnasir95&layout=compact&langs_count=8
 
       - name: Commit and push if changed
         run: |
