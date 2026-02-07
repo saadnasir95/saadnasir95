@@ -27,18 +27,10 @@ Git • GitHub • Docker • REST APIs • Azure
 
 ## 📊 GitHub Overview
 
-<img src="assets/stats.svg" alt="GitHub Stats" />
+
 <img src="assets/top-langs.svg" alt="Top Languages" />
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=saadnasir95)
-
----
-
-## 🏆 GitHub Achievements
-![Trophies](https://github-profile-trophy.vercel.app/?username=saadnasir95&no-frame=true&row=1&column=6)
-
----
-
 
 ---
 
