@@ -27,9 +27,8 @@ Git • GitHub • Docker • REST APIs • Azure
 
 ## 📊 GitHub Overview
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=saadnasir95&show_icons=true&include_all_commits=true&cache_seconds=86400)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=saadnasir95&layout=compact&langs_count=8&cache_seconds=86400)
+<img src="assets/stats.svg" alt="GitHub Stats" />
+<img src="assets/top-langs.svg" alt="Top Languages" />
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=saadnasir95)
 
