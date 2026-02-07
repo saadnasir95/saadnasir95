@@ -22,7 +22,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           card: stats
           path: assets/stats.svg
-          options: username=saadnasir95&show_icons=true&include_all_commits=true
+          options: username=saadnasir95&show_icons=true&include_all_commits=true&count_private=true
 
       # Generate "Top Languages" card
       - name: Generate top languages card
